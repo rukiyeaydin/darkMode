@@ -41,7 +41,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="all">
+    <div className="all items-center content-center text-center">
       <div className="container">
         <div className="hero" style={{animation: "animasyon 3s"}}>
         <h1 className="heroh1">Hello, I'm Rukiye</h1>
@@ -67,7 +67,7 @@ const Hero = () => {
 
       <div className="stacks" ref={ref}>
         <h1 className="text-3xl">MY SKILLS</h1>
-        <div className="stacksalt">
+        <div className="stacksalt items-center content-center">
         <div className="logos">
           <div className="sec1">
             {trail.slice(0, Math.ceil(logosData.length / 2)).map((styles, index) => (
