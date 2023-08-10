@@ -11,7 +11,7 @@ const Advancedhero = () => {
         <div className="my-20">
             <div className="prlx2 flex gap-24 flex-wrap m-2">
                 <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-3xl" src={fashion}/></div>
+                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={fashion}/></div>
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">E-commerce</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
