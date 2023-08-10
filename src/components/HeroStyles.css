@@ -1,16 +1,15 @@
 body{background-color: black;}
-.container {
-  /* position: relative;  */
+
+.hakkimda{
+  position: relative; 
   height: 100vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
   border-bottom: 2px solid rgb(0,255,255);
 }
-
-.container::before {    
+.hakkimda::before {    
     content: "";
     background-image: url('../images/pc3.jpg');
     background-size: cover;
@@ -21,33 +20,12 @@ body{background-color: black;}
     left: 0px;
     opacity: 0.30;
 }
+.hakkimdahero{z-index: 2; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.hakkimdahero h1{font-weight: 700; font-size: xx-large; margin-bottom: 10px;}
+.pfirst{font-size: large; width: 70%; margin-bottom: 10px;}
+.ikonlar{margin: 20px 0px 25px 0px;}
 
-.heroh1 {
-  color: white;
-  font-size: 8vh;
-  margin-bottom: 30px;
-  width: 50%;
-}
-.parap{
-  color: white;
-  font-size: x-large;
-}
-.hero{
-  z-index: 2;
-  /* height: 100vh; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-}
-.para{
-  color: white;
-  width: 70%;
-  text-align: center;
-  margin-bottom: 10vh;
-}
+
 a{text-decoration: none;}
 .githubIcon, .mailIcon,.linkedinIcon{
   color: white;
@@ -73,13 +51,6 @@ a{text-decoration: none;}
   -webkit-text-fill-color: transparent;
 }
 
-.icons{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 50%;
-  font-size: 3vh;
-}
 .github, .linkedin, .mail{
   display: flex;
   align-items: center;
@@ -92,7 +63,6 @@ a{text-decoration: none;}
   border-radius: 5px;
   font-weight: 600;
   color: black;
-  margin-top: 60px;
   box-shadow: 1px 2px 16px 0px rgba(0,255,255,0.7);
 }
 .prj:hover{
@@ -145,42 +115,22 @@ a{text-decoration: none;}
 }
 @media screen and (max-width : 1024px){
   .stacks{height: auto;}
-  .heroh1{font-size: 6vh;}
-  .parap{font-size: 3vh;}
-  .icons{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 3vh;
-  }
-  a{margin-bottom: 10px;}
   .anm{width: 300px; height: auto;}
   .stacksalt{display: flex; flex-direction: column;}
 }
 @media screen and (max-width : 850px){
-  .heroh1{font-size: 5vh;}
-  .parap{font-size: 2.5vh;}
-  .icons{
-    font-size: 2.5vh;
-  }
-  .prj{padding: 5px 10px; font-size: small;}
   .logo img{ width: 80px; height: 80px; box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7), 1px 2px 4px 0px rgba(0,255,255,0.7), 2px 2px 1px 0px rgba(0,255,255,0.7), 2px 4px 8px 0px rgba(0,255,255,0.7);}
   .sec1,.sec2{ flex-direction: column;}
   .logos{display: flex; flex-direction: row;}
 }
 @media screen and (max-width : 550px){
-  .heroh1{font-size: 4vh;}
-  .parap{font-size: 2vh;}
-  .icons{
-    font-size: 2vh;
-  }
   .logo img{ width: 50px; height: 50px; }
+  .hakkimdahero h1{font-size: larger;}
+  .pfirst{font-size: medium;}
 }
 @media screen and (max-width : 320px){
-  .heroh1{font-size: 3.5vh;}
-  .parap{font-size: 1.8vh;}
-  .prj{margin-top: 30px;}
-  .para{margin-bottom: 5vh;}
   .logo img{width: 45px; height: 45px;}
   .stacks h1{font-size: x-large;}
+  .hakkimdahero h1{font-size: large;}
+  .pfirst{font-size: small;}
 }

@@ -42,26 +42,25 @@ const Hero = () => {
 
   return (
     <div className="all items-center content-center text-center">
-      <div className="container">
-        <div className="hero" style={{animation: "animasyon 3s"}}>
-        <h1 className="heroh1">Hello, I'm Rukiye</h1>
-        <div className="para">
-          <p className="parap">I'm a front-end enthusiast who takes responsive websites. 
+
+      <div className="hakkimda">
+        <div className="hakkimdahero" style={{animation: "animasyon 3s"}}>
+          <h1>Hello, I'm Rukiye</h1>
+          <p className="pfirst">I'm a front-end enthusiast who takes responsive websites. 
             With every project, my goal is to combine creativity and technical expertise to deliver seamless user interfaces that 
             leave a lasting impression on users, ensuring they have an enjoyable and memorable experience while exploring the digital world.
           </p>
-        </div>
-        <div className="icons">
-          <a href="https://github.com/rukiyeaydin" className="github">
-            <BsGithub className="githubIcon"/>
-            <p className="githubP">rukiyeaydin</p>
-          </a>
-          <a href="https://www.linkedin.com/in/rukiye-ayd%C4%B1n-015743207/" className="linkedin">
-            <AiFillLinkedin className="linkedinIcon"/>
-            <p className="linkedinP">Rukiye Aydın</p>
-          </a>      
-        </div>
-        <a href="/Projects" className="prj">My Projects</a>
+          <div className="ikonlar">
+            <a href="https://github.com/rukiyeaydin" className="github">
+              <BsGithub className="githubIcon"/>
+              <p className="githubP">rukiyeaydin</p>
+            </a>
+            <a href="https://www.linkedin.com/in/rukiye-ayd%C4%B1n-015743207/" className="linkedin">
+              <AiFillLinkedin className="linkedinIcon"/>
+              <p className="linkedinP">Rukiye Aydın</p>
+            </a>
+          </div>
+          <a href="/Projects" className="prj">My Projects</a>
         </div>
       </div>
 
