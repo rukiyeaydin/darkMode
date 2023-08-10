@@ -1,15 +1,27 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from "styled-components";
 import Lottie from "lottie-react";
 import letter from "../assets/letter.json";
 
 const Herocontact = () => {
-
   const form = useRef();
+  const [missingFields, setMissingFields] = useState([]);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const missing = [];
+
+    // Check if fields are empty
+    if (!form.current.user_name.value) missing.push('"Name"');
+    if (!form.current.user_email.value) missing.push('"Email"');
+    if (!form.current.message.value) missing.push('"Message"');
+
+    if (missing.length > 0) {
+      setMissingFields(missing);
+      return;
+    }
 
     emailjs.sendForm('service_lkh9awo', 'template_qzhhwjs', form.current, 'nHOlfoaHJQt7t232Q')
       .then((result) => {
@@ -20,22 +32,28 @@ const Herocontact = () => {
       });
   };
 
+  const handleClick = () =>{
+    setMissingFields([]);
+  }
 
   return (
     <StyledContactForm>
-      <Lottie animationData={letter} className='letter'/>
-    <h1 style={{color: 'white'}}>Contact Me</h1>
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Enter Your Name</label>
-      <input type="text" name="user_name" />
-      <label>Enter Your Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="SEND" className='send'/>
-    </form>
-  </StyledContactForm>
-  )
+      <Lottie animationData={letter} className='letter' />
+      <h1 style={{ color: 'white' }}>Contact Me</h1>
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Enter Your Name</label>
+        <input type="text" name="user_name" id='username' />
+        <label>Enter Your Email</label>
+        <input type="email" name="user_email" id='mail' />
+        <label>Message</label>
+        <textarea name="message" id='message' />
+        {missingFields.length > 0 && (
+          <p style={{ color: 'red', backgroundColor:'white',marginTop:"5px", padding:"0px 5px", borderRadius:"3px", fontWeight:"600", fontSize:"medium" }}>Please, enter your : {missingFields.join(' , ')}</p>
+        )}
+        <input type="submit" value="SEND" className='send' onClick={handleClick} />
+      </form>
+    </StyledContactForm>
+  );
 }
 
 export default Herocontact

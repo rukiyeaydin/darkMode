@@ -93,7 +93,7 @@ const Forbeginnershero = () => {
                 <div className="p-3 w-auto bg-gray-100 rounded-2xl">
                     <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={rgb}/></div>
                     <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Background Changer</h3>
+                        <h3 class="text-lg mt-1 font-bold max-w-xs">Background Color Changer</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
                             <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/rgb_color'>
