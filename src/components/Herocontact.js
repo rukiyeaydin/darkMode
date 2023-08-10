@@ -32,7 +32,7 @@ const Herocontact = () => {
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
-      <input type="submit" value="SEND" />
+      <input type="submit" value="SEND" className='send'/>
     </form>
   </StyledContactForm>
   )
@@ -41,18 +41,21 @@ const Herocontact = () => {
 export default Herocontact
 
 const StyledContactForm = styled.div`
-  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   
   .letter{
+    margin-top: 10vh;
     width: 200px; height: "auto";
   }
   h1{
     font-weight: 800;
     font-size: x-large;
+  }
+  .send{
+    margin-bottom: 5vh;
   }
 
   form {
