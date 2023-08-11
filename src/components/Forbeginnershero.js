@@ -11,6 +11,8 @@ import password from "../images/password.png";
 import pixelart from "../images/pixelart.png";
 import rgb from "../images/Rgb.png";
 import temperature from "../images/Temperatureconverter.png";
+import weather from "../images/weather.png";
+import todo from "../images/todo.png";
 
 const Forbeginnershero = () => {
   return (
@@ -23,7 +25,6 @@ const Forbeginnershero = () => {
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">Body Mass Index Calculator</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
-                            <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/vucut_kitle_indeksi'>
                                 <BsGithub/>
                             </a>
@@ -35,7 +36,6 @@ const Forbeginnershero = () => {
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">Calculator</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
-                            <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/calculator'>
                                 <BsGithub/>
                             </a>
@@ -47,7 +47,6 @@ const Forbeginnershero = () => {
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">Digital Clock</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
-                            <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/digital_clock'>
                                 <BsGithub/>
                             </a>
@@ -59,7 +58,6 @@ const Forbeginnershero = () => {
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">Number Guess Game</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
-                            <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/guess_number'>
                                 <BsGithub/>
                             </a>
@@ -71,7 +69,6 @@ const Forbeginnershero = () => {
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">Password Strength Checker</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
-                            <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/password_strength_check'>
                                 <BsGithub/>
                             </a>
@@ -83,7 +80,6 @@ const Forbeginnershero = () => {
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">Pixel Art</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
-                            <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/pixelArt'>
                                 <BsGithub/>
                             </a>
@@ -95,7 +91,6 @@ const Forbeginnershero = () => {
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">Background Color Changer</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
-                            <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/rgb_color'>
                                 <BsGithub/>
                             </a>
@@ -107,8 +102,29 @@ const Forbeginnershero = () => {
                     <div className="">
                         <h3 class="text-lg mt-1 font-bold max-w-xs">Temperature Converter</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
-                            <a href="#" className="px-4 py-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300">Live Demo</a>
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/temperature_converter'>
+                                <BsGithub/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
+                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={weather}/></div>
+                    <div className="">
+                        <h3 class="text-lg mt-1 font-bold max-w-xs">Weather App with React</h3>
+                        <div className="flex justify-between items-center pt-3 pb-2">
+                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/weather-app-with-react'>
+                                <BsGithub/>
+                            </a>
+                        </div>
+                    </div>
+                </div>,
+                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
+                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={todo}/></div>
+                    <div className="">
+                        <h3 class="text-lg mt-1 font-bold max-w-xs">ToDo App with React</h3>
+                        <div className="flex justify-between items-center pt-3 pb-2">
+                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/todo-APP'>
                                 <BsGithub/>
                             </a>
                         </div>
