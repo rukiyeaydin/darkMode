@@ -118,7 +118,7 @@ const Forbeginnershero = () => {
                             </a>
                         </div>
                     </div>
-                </div>,
+                </div>
                 <div className="p-3 w-auto bg-gray-100 rounded-2xl">
                     <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={todo}/></div>
                     <div className="">
