@@ -1,6 +1,6 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
 import "./Heroprojects.css";
+import { Parallax } from 'react-parallax';
 import {BsGithub} from "react-icons/bs";
 import Code from "../images/codewebp.webp";
 import bodymass from "../images/bodymass.png";
