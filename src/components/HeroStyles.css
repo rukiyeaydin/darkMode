@@ -113,6 +113,22 @@ a{text-decoration: none;}
     transform: translateX(0);
   }
 }
+@keyframes animasyon2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes animasyon3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media screen and (max-width : 1024px){
   .stacks{height: auto;}
   .anm{width: 300px; height: auto;}

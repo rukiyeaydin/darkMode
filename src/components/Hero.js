@@ -44,13 +44,13 @@ const Hero = () => {
     <div className="all items-center content-center text-center">
 
       <div className="hakkimda">
-        <div className="hakkimdahero" style={{animation: "animasyon 3s"}}>
-          <h1>Hello, I'm Rukiye</h1>
-          <p className="pfirst">I'm a front-end enthusiast who takes responsive websites. 
+        <div className="hakkimdahero" >
+          <h1 style={{animation: "animasyon 2s"}}>Hello, I'm Rukiye</h1>
+          <p className="pfirst" style={{animation: "animasyon2 1s"}}>I'm a front-end enthusiast who takes responsive websites. 
             With every project, my goal is to combine creativity and technical expertise to deliver seamless user interfaces that 
             leave a lasting impression on users, ensuring they have an enjoyable and memorable experience while exploring the digital world.
           </p>
-          <div className="ikonlar">
+          <div className="ikonlar" style={{animation: "animasyon3 4s"}}>
             <a href="https://github.com/rukiyeaydin" className="github">
               <BsGithub className="githubIcon"/>
               <p className="githubP">rukiyeaydin</p>
@@ -60,7 +60,7 @@ const Hero = () => {
               <p className="linkedinP">Rukiye Aydın</p>
             </a>
           </div>
-          <a href="/Projects" className="prj">My Projects</a>
+          <a href="/Projects" className="prj" style={{animation: "animasyon3 5s"}}>My Projects</a>
         </div>
       </div>
 
