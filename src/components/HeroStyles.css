@@ -107,7 +107,7 @@ a{text-decoration: none;}
 
 @keyframes animasyon {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   to {
     transform: translateX(0);
@@ -115,7 +115,7 @@ a{text-decoration: none;}
 }
 @keyframes animasyon2 {
   from {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
   to {
     transform: translateX(0);
