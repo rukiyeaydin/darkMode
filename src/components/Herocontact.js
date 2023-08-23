@@ -133,5 +133,8 @@ const StyledContactForm = styled.div`
         box-shadow: 1px 2px 8px 0px rgba(0,255,255,0.7);
       }
     }
+    @media screen and (max-width : 850px){
+      width: 90%;
+    }
   }
 `;
