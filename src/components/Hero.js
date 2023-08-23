@@ -45,8 +45,8 @@ const Hero = () => {
 
       <div className="hakkimda">
         <div className="hakkimdahero" >
-          <h1 style={{animation: "animasyon 2s"}}>Hello, I'm Rukiye</h1>
-          <p className="pfirst" style={{animation: "animasyon2 1s"}}>I'm a front-end enthusiast who takes responsive websites. 
+          <h1 style={{animation: "animasyon 2s"}} className="hello">Hello, I'm Rukiye</h1>
+          <p className="pfirst" style={{animation: "animasyon2 1.5s"}}>I'm a front-end enthusiast who takes responsive websites. 
             With every project, my goal is to combine creativity and technical expertise to deliver seamless user interfaces that 
             leave a lasting impression on users, ensuring they have an enjoyable and memorable experience while exploring the digital world.
           </p>
@@ -59,8 +59,8 @@ const Hero = () => {
               <AiFillLinkedin className="linkedinIcon"/>
               <p className="linkedinP">Rukiye Aydın</p>
             </a>
+            <a href="/Projects" className="prj" style={{animation: "animasyon3 5s"}}>My Projects</a>
           </div>
-          <a href="/Projects" className="prj" style={{animation: "animasyon3 5s"}}>My Projects</a>
         </div>
       </div>
 

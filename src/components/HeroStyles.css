@@ -1,29 +1,25 @@
 body{background-color: black;}
 
+.hello{
+  background: linear-gradient(94.23deg,#5374fa 12.41%,#fd9179 52.55%,#ff6969 89.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 300!important;
+  font-size: 72px!important;
+  margin-bottom: 10px;
+  font-family: alliance,sans-serif;
+}
+
 .hakkimda{
-  position: relative; 
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
   border-bottom: 2px solid rgb(0,255,255);
 }
-.hakkimda::before {    
-    content: "";
-    background-image: url('../images/pc3.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.30;
-}
-.hakkimdahero{z-index: 2; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;}
-.hakkimdahero h1{font-weight: 700; font-size: xx-large; margin-bottom: 10px;}
-.pfirst{font-size: large; width: 70%; margin-bottom: 10px;}
-.ikonlar{margin: 20px 0px 25px 0px;}
+.hakkimdahero{ color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.pfirst{font-family: alliance,sans-serif; font-size: 20px; font-weight: 400!important; width: 70%; margin-bottom: 10px;}
+.ikonlar{margin: 20px 0px 25px 0px; display: flex; flex-direction: column; height: 130px; justify-content: space-between;}
 
 
 a{text-decoration: none;}
@@ -38,12 +34,6 @@ a{text-decoration: none;}
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.mail:hover .mailIcon { color: rgba(0,255,255,0.7);}
-.mail:hover .mailP{  
-  background: linear-gradient(to left, white, rgb(122, 255, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .linkedin:hover .linkedinIcon {color: rgba(0,255,255,0.7);}
 .linkedin:hover .linkedinP{  
   background: linear-gradient(to left, white, rgb(122, 255, 255));
@@ -51,7 +41,7 @@ a{text-decoration: none;}
   -webkit-text-fill-color: transparent;
 }
 
-.github, .linkedin, .mail{
+.github, .linkedin{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,6 +94,7 @@ a{text-decoration: none;}
 .sec1,.sec2{ display: flex; align-items: center; justify-content: center;}
 
 .anm{width: 500px; height: auto;}
+.code{width: 500px; height: auto;}
 
 @keyframes animasyon {
   from {
@@ -133,20 +124,24 @@ a{text-decoration: none;}
   .stacks{height: auto;}
   .anm{width: 300px; height: auto;}
   .stacksalt{display: flex; flex-direction: column;}
+  .code{display: none;}
 }
 @media screen and (max-width : 850px){
   .logo img{ width: 80px; height: 80px; box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7), 1px 2px 4px 0px rgba(0,255,255,0.7), 2px 2px 1px 0px rgba(0,255,255,0.7), 2px 4px 8px 0px rgba(0,255,255,0.7);}
   .sec1,.sec2{ flex-direction: column;}
   .logos{display: flex; flex-direction: row;}
+  .hello{font-size: 44px!important;}
 }
 @media screen and (max-width : 550px){
   .logo img{ width: 50px; height: 50px; }
-  .hakkimdahero h1{font-size: larger;}
-  .pfirst{font-size: medium;}
+  .pfirst{font-size: 16px;}
+  .ikonlar{height: 100px;}
+  .prj{padding: 5px 16px; font-size: small;}
 }
 @media screen and (max-width : 320px){
   .logo img{width: 45px; height: 45px;}
   .stacks h1{font-size: x-large;}
-  .hakkimdahero h1{font-size: large;}
-  .pfirst{font-size: small;}
+  .ikonlar{height: 90px;}
+  .hello{font-size: 36px;}
+  .pfirst{font-size: 14px;}
 }
