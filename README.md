@@ -1,2 +1,2 @@
 # My portfolio
-For live demo ->   https://portfolio-rukiyeaydin.vercel.app/
+For live demo ->  https://rukiyeaydin-portfolio.vercel.app/
