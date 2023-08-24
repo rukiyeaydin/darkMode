@@ -65,7 +65,7 @@ const Hero = () => {
       </div>
 
       <div className="stacks" ref={ref}>
-        <h1 className="text-3xl">MY SKILLS</h1>
+        <h1 className="skill">MY SKILLS</h1>
         <div className="stacksalt items-center content-center">
         <div className="logos">
           <div className="sec1">
