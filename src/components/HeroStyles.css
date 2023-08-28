@@ -1,7 +1,7 @@
 body{background-color: black;}
 
 .hello{
-  background: linear-gradient(94.23deg,#5374fa 12.41%,#fd9179 52.55%,#ff6969 89.95%);
+  background: linear-gradient(to right, #43cea2, #185a9d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 300!important;
@@ -10,7 +10,7 @@ body{background-color: black;}
   font-family: alliance,sans-serif!important;
 }
 .skill{
-  background: linear-gradient(94.23deg,#5374fa 12.41%,#fd9179 52.55%,#ff6969 89.95%);
+  background: linear-gradient(to right, #43cea2, #185a9d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 300!important;
