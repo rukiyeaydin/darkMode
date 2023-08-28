@@ -19,7 +19,7 @@ import crud from "../images/crud.png";
 const Forbeginnershero = () => {
   return (
     <div>
-    <Parallax blur={5} bgImage={Code} strength={500} className='advancedhero'> 
+    {/* <Parallax blur={5} bgImage={Code} strength={500} className='advancedhero'>  */}
         <div className="my-20">
             <div className="prlx2 flex gap-24 flex-wrap m-2">
                 <div className="p-3 w-auto bg-gray-100 rounded-2xl">
@@ -157,7 +157,7 @@ const Forbeginnershero = () => {
 
             </div>
         </div>    
-    </Parallax>
+    {/* </Parallax> */}
     </div>
   )
 }

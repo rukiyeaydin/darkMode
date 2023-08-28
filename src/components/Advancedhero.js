@@ -1,13 +1,12 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import Code from "../images/codewebp.webp";
 import "./Heroprojects.css";
 import fashion from "../images/fashion.png";
 import {BsGithub} from "react-icons/bs";
 
 const Advancedhero = () => {
   return (
-    <Parallax blur={5} bgImage={Code} strength={500} className='advancedhero'> 
+    // <Parallax blur={5} bgImage={Code} strength={500} className='advancedhero'> 
         <div className="my-20">
             <div className="prlx2 flex gap-24 flex-wrap m-2">
                 <div className="p-3 w-auto bg-gray-100 rounded-2xl">
@@ -24,7 +23,7 @@ const Advancedhero = () => {
                 </div>
             </div>
         </div>    
-    </Parallax>
+    // </Parallax>
   )
 }
 
