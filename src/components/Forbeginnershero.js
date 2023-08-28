@@ -13,6 +13,8 @@ import rgb from "../images/Rgb.png";
 import temperature from "../images/Temperatureconverter.png";
 import weather from "../images/weather.png";
 import todo from "../images/todo.png";
+import dictionary from "../images/dictionary.png";
+import crud from "../images/crud.png";
 
 const Forbeginnershero = () => {
   return (
@@ -125,6 +127,28 @@ const Forbeginnershero = () => {
                         <h3 class="text-lg mt-1 font-bold max-w-xs">ToDo App with React</h3>
                         <div className="flex justify-between items-center pt-3 pb-2">
                             <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/todo-APP'>
+                                <BsGithub/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
+                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={dictionary}/></div>
+                    <div className="">
+                        <h3 class="text-lg mt-1 font-bold max-w-xs">Dictionary App</h3>
+                        <div className="flex justify-between items-center pt-3 pb-2">
+                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/Dictionary-App'>
+                                <BsGithub/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
+                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={crud}/></div>
+                    <div className="">
+                        <h3 class="text-lg mt-1 font-bold max-w-xs">Crud App</h3>
+                        <div className="flex justify-between items-center pt-3 pb-2">
+                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/Crud'>
                                 <BsGithub/>
                             </a>
                         </div>
