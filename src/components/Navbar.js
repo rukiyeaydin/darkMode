@@ -11,7 +11,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className={openNavbar ?  "navbar" : "navbar active"}>
+    <div className={openNavbar ?  "navbar" : "navbar active"} id='top'>
         <Link to="/" className='navbar-logo'><h3 className='font-bold'>Rukiye</h3></Link>
         <ul className={openNavbar ?  "navbar-menu active" : "navbar-menu"}>
             <li><Link to="/" className={`navbar-links ${location.pathname === '/' ? 'active' : ''}`}>Home</Link></li>
