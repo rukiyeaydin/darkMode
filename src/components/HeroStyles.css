@@ -145,12 +145,12 @@ a{text-decoration: none;}
   .pfirst{font-size: 16px;}
   .ikonlar{height: 100px;}
   .prj{padding: 5px 16px; font-size: small;}
-  .skill{font-size: 38px;}
+  .skill{font-size: 36px;}
 }
 @media screen and (max-width : 320px){
   .logo img{width: 45px; height: 45px;}
-  .stacks h1{font-size: x-large;}
   .ikonlar{height: 90px;}
   .hello{font-size: 36px;}
   .pfirst{font-size: 14px;}
+  .anm{width: 260px; height: auto;}
 }

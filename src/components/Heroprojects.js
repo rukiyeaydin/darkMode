@@ -15,7 +15,7 @@ const Heroprojects = () => {
             <AiOutlineArrowDown />
           </div>
         </Link>
-        <Link to="forbeginners" spy={true} smooth={true} offset={-70} duration={1800} className="iki w-72 bg-white flex-col items-center content-center text-center font-black p-1 m-2 rounded-md cursor-pointer">
+        <Link to="forbeginners" spy={true} smooth={true} offset={-70} duration={1800} className="iki w-72 bg-black text-white flex-col items-center content-center text-center font-black p-1 m-2 rounded-md cursor-pointer">
           <p className='p-2 font-bold text-xl'>Projects For Beginners</p>
           <div className="flex items-center justify-center text-2xl">
             <AiOutlineArrowDown />
