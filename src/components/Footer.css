@@ -4,27 +4,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-top: 1px solid rgb(0,255,255);
     color: white;
     font-size: large;
-    padding: 50px;
+    padding: 10px;
 } 
-.left,.right{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    width: 300px;
-}
-.middle{width: 500px;}
-.konum{ display: flex; align-items: center; justify-content: left;}
-.lg, .about{ font-size: larger; font-weight: 900; margin-bottom: 10px;}
 
 @media screen and (max-width : 1024px){
     .footer{display: flex; flex-direction: column; align-items: center; justify-content: center;}
-    .left,.middle,.right{margin: 20px 0px; align-items: center; justify-content: center; text-align: center;}
-    .left ,.middle,.right{width: auto;}
 }
 @media screen and (max-width : 550px){
     .footer{font-size: medium;}
-    .lg, .about{ font-size: large;}
 }

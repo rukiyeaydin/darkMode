@@ -14,8 +14,11 @@ import { useTrail, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import Lottie from "lottie-react";
 import anm from "../assets/anm.json";
+import { useDarkMode } from './DarkModeContext';
 
 const Hero = () => {
+
+  const { text,backgroundColor, color, githubColor } = useDarkMode();
 
   const logosData = [
     { logo: html, text: 'HTML' },
@@ -46,20 +49,20 @@ const Hero = () => {
       <div className="hakkimda">
         <div className="hakkimdahero" >
           <h1 style={{animation: "animasyon 2s"}} className="hello">Hello, I'm Rukiye</h1>
-          <p className="pfirst" style={{animation: "animasyon2 1.5s"}}>I'm a front-end enthusiast who takes responsive websites. 
+          <p className="pfirst" style={{animation: "animasyon2 1.5s", color: text}} >I'm a front-end enthusiast who takes responsive websites. 
             With every project, my goal is to combine creativity and technical expertise to deliver seamless user interfaces that 
             leave a lasting impression on users, ensuring they have an enjoyable and memorable experience while exploring the digital world.
           </p>
-          <div className="ikonlar" style={{animation: "animasyon3 4s"}}>
-            <a href="https://github.com/rukiyeaydin" className="github">
-              <BsGithub className="githubIcon"/>
-              <p className="githubP">rukiyeaydin</p>
+          <div className="ikonlar">
+            <a href="https://github.com/rukiyeaydin" className="github"  style={{animation: "animasyon3 3s"}}>
+              <BsGithub className="githubIcon" style={{ color: githubColor}} />
+              <p className="githubP" style={{ color: githubColor}} >rukiyeaydin</p>
             </a>
-            <a href="https://www.linkedin.com/in/rukiye-ayd%C4%B1n-015743207/" className="linkedin">
-              <AiFillLinkedin className="linkedinIcon"/>
-              <p className="linkedinP">Rukiye Aydın</p>
+            <a href="https://www.linkedin.com/in/rukiye-ayd%C4%B1n-015743207/" className="linkedin" style={{animation: "animasyon3 2s"}}>
+              <AiFillLinkedin className="linkedinIcon" style={{ color: githubColor}} />
+              <p className="linkedinP" style={{ color: githubColor}} >Rukiye Aydın</p>
             </a>
-            <a href="/Projects" className="prj" style={{animation: "animasyon3 5s"}}>My Projects</a>
+            <a href="/Projects" className="prj" style={{animation: "animasyon3 1s" ,background:githubColor}}><p  style={{color: backgroundColor}}>My Projects</p></a>
           </div>
         </div>
       </div>
@@ -72,7 +75,7 @@ const Hero = () => {
             {trail.slice(0, Math.ceil(logosData.length / 2)).map((styles, index) => (
               <animated.div key={logosData[index].text} style={styles} className="logo">
                 <img src={logosData[index].logo} alt="" />
-                <p>{logosData[index].text}</p>
+                <p style={{color: color}}>{logosData[index].text}</p>
               </animated.div>
             ))}
           </div>
@@ -80,7 +83,7 @@ const Hero = () => {
             {trail.slice(Math.ceil(logosData.length / 2)).map((styles, index) => (
               <animated.div key={logosData[index + Math.ceil(logosData.length / 2)].text} style={styles} className="logo">
                 <img src={logosData[index + Math.ceil(logosData.length / 2)].logo} alt="" />
-                <p>{logosData[index + Math.ceil(logosData.length / 2)].text}</p>
+                <p style={{color: color}}>{logosData[index + Math.ceil(logosData.length / 2)].text}</p>
               </animated.div>
             ))}
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
+// import { Parallax } from 'react-parallax';
 import "./Heroprojects.css";
 import fashion from "../images/fashion.png";
 import {BsGithub} from "react-icons/bs";
@@ -7,7 +7,8 @@ import {BsGithub} from "react-icons/bs";
 const Advancedhero = () => {
   return (
     // <Parallax blur={5} bgImage={Code} strength={500} className='advancedhero'> 
-        <div className="my-20">
+        <div className="my-4 flex flex-col items-center content-center">
+            <p className='text-3xl font-bold my-10 text-center' id='advanced'>ADVANCED PROJECTS</p>
             <div className="prlx2 flex gap-24 flex-wrap m-2">
                 <div className="p-3 w-auto bg-gray-100 rounded-2xl">
                     <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={fashion}/></div>

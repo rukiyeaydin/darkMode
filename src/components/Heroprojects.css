@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+
 .foto {
     position: relative;
     height: 100vh;
@@ -24,4 +26,11 @@
 }
 .bir:hover ,.iki:hover{
     box-shadow: 1px 2px 10px 0px rgba(0,255,255,0.7);
+}
+#forbeginners,#advanced{
+    font-family: 'Heebo', sans-serif;
+    font-size: 40px;
+    background: linear-gradient(to right, #fc00ff, #00dbde); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

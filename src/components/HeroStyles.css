@@ -16,6 +16,7 @@ body{background-color: black;}
   font-weight: 300!important;
   font-size: 46px;
   font-family: alliance,sans-serif!important;
+  font-weight: 600;
 }
 
 .hakkimda{
@@ -23,41 +24,34 @@ body{background-color: black;}
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid rgb(0,255,255);
 }
 .hakkimdahero{ color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .pfirst{font-family: alliance,sans-serif; font-size: 20px; font-weight: 400!important; width: 70%; margin-bottom: 10px;}
-.ikonlar{margin: 20px 0px 25px 0px; display: flex; flex-direction: column; height: 130px; justify-content: space-between;}
+.ikonlar{margin: 20px 0px 25px 0px; display: flex; flex-direction: column; height: 180px; justify-content: space-around;}
 
 
 a{text-decoration: none;}
-.githubIcon, .mailIcon,.linkedinIcon{
-  color: white;
+
+.githubIcon,.linkedinIcon{
   margin-right: 5px;
+  font-size: x-large;
 }
 
-.github:hover .githubIcon{color: rgba(0,255,255,0.7);}
-.github:hover .githubP{  
-  background: linear-gradient(to left, white, rgb(122, 255, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.linkedin:hover .linkedinIcon {color: rgba(0,255,255,0.7);}
-.linkedin:hover .linkedinP{  
-  background: linear-gradient(to left, white, rgb(122, 255, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
+.github:hover .githubIcon{color: #69a5e1!important;}
+.github:hover .githubP{color: #69a5e1!important;}
+.linkedin:hover .linkedinIcon {color: #69a5e1!important;}
+.linkedin:hover .linkedinP{color: #69a5e1!important;}
 
 .github, .linkedin{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  font-size: large;
 }
 .prj{
   background-color: white;
-  padding: 10px 20px;
+  padding: 8px;
   border-radius: 5px;
   font-weight: 600;
   color: black;
@@ -95,7 +89,7 @@ a{text-decoration: none;}
   background-color: white;
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7), 1px 2px 4px 0px rgba(0,255,255,0.7),  2px 4px 16px 0px rgba(0,255,255,0.7);
+  box-shadow: 0px 0px 1px 0px rgba(0,255,255,0.7), 0px 0px 4px 0px rgba(0,255,255,0.7),  0px 0px 12px 0px rgba(0, 255, 255, 0.46);
 }
 .logo p{font-weight: 700; margin-top: 10px;}
 
@@ -139,17 +133,17 @@ a{text-decoration: none;}
   .sec1,.sec2{ flex-direction: column;}
   .logos{display: flex; flex-direction: row;}
   .hello{font-size: 44px!important;}
+  .githubIcon,.linkedinIcon{font-size: large;}
+  .githubP,.linkedinP{font-size: medium;}
 }
 @media screen and (max-width : 550px){
   .logo img{ width: 50px; height: 50px; }
   .pfirst{font-size: 16px;}
-  .ikonlar{height: 100px;}
   .prj{padding: 5px 16px; font-size: small;}
   .skill{font-size: 36px;}
 }
 @media screen and (max-width : 320px){
   .logo img{width: 45px; height: 45px;}
-  .ikonlar{height: 90px;}
   .hello{font-size: 36px;}
   .pfirst{font-size: 14px;}
   .anm{width: 260px; height: auto;}

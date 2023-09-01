@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Projectsall from '../components/Projectsall';
 import Up from '../components/Up';
+import Mode from "../components/Mode";
 
 
 const Projects = () => {
@@ -12,6 +13,7 @@ const Projects = () => {
       <Projectsall />
       <Footer />
       <Up />
+      <Mode />
     </div>
   )
 }

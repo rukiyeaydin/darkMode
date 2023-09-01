@@ -3,8 +3,11 @@ import emailjs from '@emailjs/browser';
 import styled from "styled-components";
 import Lottie from "lottie-react";
 import letter from "../assets/letter.json";
+import { useDarkMode } from '../components/DarkModeContext'; 
 
 const Herocontact = () => {
+  const { color } = useDarkMode();
+
   const form = useRef();
   const [missingFields, setMissingFields] = useState([]);
 
@@ -39,16 +42,16 @@ const Herocontact = () => {
   return (
     <StyledContactForm>
       <Lottie animationData={letter} className='letter' />
-      <h1 style={{ color: 'white' }}>Contact Me</h1>
+      <h1 style={{ color: color }}>Contact Me</h1>
       <form ref={form} onSubmit={sendEmail}>
-        <label>Enter Your Name</label>
+        <label style={{ color: color }}>Enter Your Name</label>
         <input type="text" name="user_name" id='username' />
-        <label>Enter Your Email</label>
+        <label style={{ color: color }}>Enter Your Email</label>
         <input type="email" name="user_email" id='mail' />
-        <label>Message</label>
+        <label style={{ color: color }}>Message</label>
         <textarea name="message" id='message' />
         {missingFields.length > 0 && (
-          <p style={{ color: 'red', backgroundColor:'white',marginTop:"5px", padding:"0px 5px", borderRadius:"3px", fontWeight:"600", fontSize:"medium" }}>Please, enter your : {missingFields.join(' , ')}</p>
+          <p style={{ color: color, backgroundColor:'white',marginTop:"5px", padding:"0px 5px", borderRadius:"3px", fontWeight:"600", fontSize:"medium" }}>Please, enter your : {missingFields.join(' , ')}</p>
         )}
         <input type="submit" value="SEND" className='send' onClick={handleClick} />
       </form>
@@ -65,7 +68,6 @@ const StyledContactForm = styled.div`
   flex-direction: column;
   
   .letter{
-    margin-top: 10vh;
     width: 200px; height: "auto";
   }
   h1{
@@ -125,12 +127,12 @@ const StyledContactForm = styled.div`
     input[type="submit"] {
       margin-top: 2rem;
       cursor: pointer;
-      background: linear-gradient(to left, #eef2f3, #8e9eab);
-      color: black;
+      background: #185a9d;
+      color: white;
       border: none;
-      box-shadow: 1px 2px 16px 0px rgba(0,255,255,0.7);
+      transition: ease-in-out 0.2s;
       &:hover{
-        box-shadow: 1px 2px 8px 0px rgba(0,255,255,0.7);
+        background: #65a9ee;
       }
     }
     @media screen and (max-width : 850px){

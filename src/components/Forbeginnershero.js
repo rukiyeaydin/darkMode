@@ -2,7 +2,6 @@ import React from 'react';
 import "./Heroprojects.css";
 import { Parallax } from 'react-parallax';
 import {BsGithub} from "react-icons/bs";
-import Code from "../images/codewebp.webp";
 import bodymass from "../images/bodymass.png";
 import calculator from "../images/calculator.png";
 import digitalclock from "../images/digital_clock.png";
@@ -15,12 +14,16 @@ import weather from "../images/weather.png";
 import todo from "../images/todo.png";
 import dictionary from "../images/dictionary.png";
 import crud from "../images/crud.png";
+import { useDarkMode } from '../components/DarkModeContext'; 
 
 const Forbeginnershero = () => {
+    const { linear } = useDarkMode();
+
   return (
     <div>
     {/* <Parallax blur={5} bgImage={Code} strength={500} className='advancedhero'>  */}
-        <div className="my-20">
+        <div className="my-4 flex flex-col items-center content-center">
+        <p className='text-3xl font-bold my-20' id='forbeginners'>FOR BEGINNERS</p>
             <div className="prlx2 flex gap-24 flex-wrap m-2">
                 <div className="p-3 w-auto bg-gray-100 rounded-2xl">
                     <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={bodymass}/></div>

@@ -1,0 +1,12 @@
+.mode{
+    position: fixed;
+    bottom: 2px;
+    right: 30px;
+    z-index: 2;
+    background-color: #185a9d;
+    padding: 5px;
+    border-radius: 50%;
+}
+.mode:hover{
+    padding: 8px;
+}
