@@ -28,8 +28,6 @@ const Hero = () => {
     { logo: tailwind, text: 'TAILWIND' },
     { logo: bootstrap, text: 'BOOTSTRAP' },
     { logo: sass, text: 'SASS' },
-    { logo: mysql, text: 'MYSQL' },
-    { logo: python, text: 'PYTHON' },
   ];
 
   const [ref, inView] = useInView({
@@ -40,7 +38,7 @@ const Hero = () => {
   const trail = useTrail(logosData.length, {
     from: { opacity: 0, transform: 'translate3d(0, 30px, 0)' },
     to: { opacity: inView ? 1 : 0, transform: inView ? 'translate3d(0, 0, 0)' : 'translate3d(0, 30px, 0)' },
-    delay: 200, // The delay between each logo's appearance (2ms in this case)
+    delay: 200,
   });
 
   return (
@@ -68,7 +66,7 @@ const Hero = () => {
       </div>
 
       <div className="stacks" ref={ref}>
-        <h1 className="skill">MY SKILLS</h1>
+        <h1 className="skill">STACKS I USE</h1>
         <div className="stacksalt items-center content-center">
         <div className="logos">
           <div className="sec1">

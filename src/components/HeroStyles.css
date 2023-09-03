@@ -21,8 +21,7 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 46px;
-  font-family: 'Alliance', sans-serif!important;
-  font-weight: 600;
+  font-family: 'Alliance', sans-serif;
 }
 
 .hakkimda{
