@@ -47,9 +47,9 @@ const Hero = () => {
       <div className="hakkimda">
         <div className="hakkimdahero" >
           <h1 style={{animation: "animasyon 2s"}} className="hello">Hello, I'm Rukiye</h1>
-          <p className="pfirst" style={{animation: "animasyon2 1.5s", color: text}} >I'm a front-end enthusiast who takes responsive websites. 
-            With every project, my goal is to combine creativity and technical expertise to deliver seamless user interfaces that 
-            leave a lasting impression on users, ensuring they have an enjoyable and memorable experience while exploring the digital world.
+          <p className="pfirst" style={{animation: "animasyon2 1.5s", color: text}} >I enjoy creating responsive websites. 
+          My aim for each project is to bring together creativity and technical skills to design user-friendly interfaces 
+          that leave a positive impact on users and provide them with an enjoyable and memorable experience in the digital world.
           </p>
           <div className="ikonlar">
             <a href="https://github.com/rukiyeaydin" className="github"  style={{animation: "animasyon3 3s"}}>
