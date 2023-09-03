@@ -19,148 +19,112 @@ import { useDarkMode } from '../components/DarkModeContext';
 const Forbeginnershero = () => {
     const { linear } = useDarkMode();
 
+    // prlx2 flex gap-12 flex-wrap m-2
+
   return (
     <div>
-    {/* <Parallax blur={5} bgImage={Code} strength={500} className='advancedhero'>  */}
         <div className="my-4 flex flex-col items-center content-center">
         <p className='text-3xl font-bold my-20' id='forbeginners'>FOR BEGINNERS</p>
-            <div className="prlx2 flex gap-24 flex-wrap m-2">
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={bodymass}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Body Mass Index Calculator</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/vucut_kitle_indeksi'>
-                                <BsGithub/>
-                            </a>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 flex-wrap mx-6">
+                <a className="" href='https://github.com/rukiyeaydin/vucut_kitle_indeksi'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={bodymass}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Body Mass Index Calculator</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={calculator}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Calculator</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/calculator'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/calculator'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={calculator}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Calculator</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={digitalclock}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Digital Clock</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/digital_clock'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/digital_clock'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={digitalclock}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Digital Clock</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={guessnumber}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Number Guess Game</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/guess_number'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/guess_number'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={guessnumber}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Number Guess Game</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={password}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Password Strength Checker</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/password_strength_check'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/password_strength_check'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={password}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Password Strength Checker</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={pixelart}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Pixel Art</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/pixelArt'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/pixelArt'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={pixelart}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Pixel Art</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={rgb}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Background Color Changer</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/rgb_color'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/rgb_color'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={rgb}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Background Color Changer</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={temperature}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Temperature Converter</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/temperature_converter'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/temperature_converter'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={temperature}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Temperature Converter</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={weather}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Weather App with React</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/weather-app-with-react'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/weather-app-with-react'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={weather}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Weather App with React</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={todo}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">ToDo App with React</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/todo-APP'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/todo-APP'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={todo}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">ToDo App with React</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={dictionary}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Dictionary App</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/Dictionary-App'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/Dictionary-App'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={dictionary}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Dictionary App</h3>
                         </div>
                     </div>
-                </div>
-                <div className="p-3 w-auto bg-gray-100 rounded-2xl">
-                    <div className="w-auto h-80"><img class="w-80 h-80 rounded-2xl" src={crud}/></div>
-                    <div className="">
-                        <h3 class="text-lg mt-1 font-bold max-w-xs">Crud App</h3>
-                        <div className="flex justify-between items-center pt-3 pb-2">
-                            <a className="text-black cursor-pointer text-3xl hover:text-blue-600" href='https://github.com/rukiyeaydin/Crud'>
-                                <BsGithub/>
-                            </a>
+                </a>
+                <a className="" href='https://github.com/rukiyeaydin/Crud'>
+                    <div className="p-3 w-auto bg-gray-100 rounded-2xl w-62 flex flex-col items-center content-center">
+                        <div className="w-auto h-36 sm:h-52"><img class="w-36 h-36 sm:w-52 sm:h-52 rounded-2xl" src={crud}/></div>
+                        <div className="flex flex-col items-center content-center text-center">
+                            <h3 class="text-sm sm:text-lg mt-1 font-bold max-w-xs w-36 sm:w-52 h-16">Crud App</h3>
                         </div>
                     </div>
-                </div>
+                </a>
 
             </div>
         </div>    
-    {/* </Parallax> */}
     </div>
   )
 }
