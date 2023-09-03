@@ -21,6 +21,7 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 46px;
+  font-weight: 300!important;
   font-family: 'Alliance', sans-serif;
 }
 
